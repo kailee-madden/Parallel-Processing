@@ -1,4 +1,4 @@
-# README
+# BFS Analysis
 
 - Each BFS implementation has its own directory containing the graphProperties files and the testGraphs file
 - Each OpenMP implementation has subdirectories containing the output files for each of the 5 test cases.
