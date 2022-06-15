@@ -1,0 +1,10 @@
+Jacobi relaxation Calculation: 4096 x 4096 mesh
+
+---------------------------
+Launching jacobi kernel
+---------------------------
+Matrix elements   = 4096 x 4096 = 16777216
+Blocks            = 32 x 32 = 1024
+Threads per block = 16 x 16 = 256
+Kernel copies     = 262144
+ total: 0.124106 s
