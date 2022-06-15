@@ -1,0 +1,108 @@
+18 April 2022 09:43:09 PM
+
+DIJKSTRA_OPENMP
+  C++ version
+  Use Dijkstra's algorithm to determine the minimum
+  distance from node 0 to each node in a graph,
+  given the distances between each pair of nodes.
+
+  Although a very small example is considered, we
+  demonstrate the use of OpenMP directives for
+  parallel execution.
+
+  Distance matrix:
+
+    0   40   15  Inf  Inf  Inf
+   40    0   20   10   25    6
+   15   20    0  100  Inf  Inf
+  Inf   10  100    0  Inf  Inf
+  Inf   25  Inf  Inf    0    8
+  Inf    6  Inf  Inf    8    0
+
+  P0: Parallel region begins with 64 threads.
+
+  P0:  First=0  Last=-1
+  P7:  First=0  Last=-1
+  P8:  First=0  Last=-1
+  P9:  First=0  Last=-1
+  P10:  First=0  Last=0
+  P11:  First=1  Last=0
+  P12:  First=1  Last=0
+  P13:  First=1  Last=0
+  P14:  First=1  Last=0
+  P15:  First=1  Last=0
+  P16:  First=1  Last=0
+  P17:  First=1  Last=0
+  P18:  First=1  Last=0
+  P19:  First=1  Last=0
+  P20:  First=1  Last=0
+  P21:  First=1  Last=1
+  P22:  First=2  Last=1
+  P23:  First=2  Last=1
+  P24:  First=2  Last=1
+  P25:  First=2  Last=1
+  P26:  First=2  Last=1
+  P27:  First=2  Last=1
+  P28:  First=2  Last=1
+  P29:  First=2  Last=1
+  P30:  First=2  Last=1
+  P31:  First=2  Last=2
+  P32:  First=3  Last=2
+  P33:  First=3  Last=2
+  P34:  First=3  Last=2
+  P35:  First=3  Last=2
+  P36:  First=3  Last=2
+  P37:  First=3  Last=2
+  P38:  First=3  Last=2
+  P39:  First=3  Last=2
+  P40:  First=3  Last=2
+  P41:  First=3  Last=2
+  P6:  First=0  Last=-1
+  P42:  First=3  Last=3
+  P43:  First=4  Last=3
+  P44:  First=4  Last=3
+  P45:  First=4  Last=3
+  P46:  First=4  Last=3
+  P47:  First=4  Last=3
+  P48:  First=4  Last=3
+  P49:  First=4  Last=3
+  P50:  First=4  Last=3
+  P51:  First=4  Last=3
+  P52:  First=4  Last=3
+  P53:  First=4  Last=4
+  P54:  First=5  Last=4
+  P55:  First=5  Last=4
+  P56:  First=5  Last=4
+  P57:  First=5  Last=4
+  P58:  First=5  Last=4
+  P59:  First=5  Last=4
+  P60:  First=5  Last=4
+  P61:  First=5  Last=4
+  P62:  First=5  Last=4
+  P63:  First=5  Last=5
+  P5:  First=0  Last=-1
+  P4:  First=0  Last=-1
+  P3:  First=0  Last=-1
+  P2:  First=0  Last=-1
+  P1:  First=0  Last=-1
+  P0: Connecting node 2
+  P0: Connecting node 1
+  P0: Connecting node 5
+  P0: Connecting node 3
+  P0: Connecting node 4
+
+  P0: Exiting parallel region.
+
+  Minimum distances from node 0:
+
+   0   0
+   1  35
+   2  15
+   3  45
+   4  49
+   5  41
+
+DIJKSTRA_OPENMP
+  Normal end of execution.
+
+18 April 2022 09:43:09 PM

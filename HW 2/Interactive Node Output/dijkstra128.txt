@@ -1,0 +1,172 @@
+18 April 2022 09:43:19 PM
+
+DIJKSTRA_OPENMP
+  C++ version
+  Use Dijkstra's algorithm to determine the minimum
+  distance from node 0 to each node in a graph,
+  given the distances between each pair of nodes.
+
+  Although a very small example is considered, we
+  demonstrate the use of OpenMP directives for
+  parallel execution.
+
+  Distance matrix:
+
+    0   40   15  Inf  Inf  Inf
+   40    0   20   10   25    6
+   15   20    0  100  Inf  Inf
+  Inf   10  100    0  Inf  Inf
+  Inf   25  Inf  Inf    0    8
+  Inf    6  Inf  Inf    8    0
+
+  P0: Parallel region begins with 128 threads.
+
+  P0:  First=0  Last=-1
+  P7:  First=0  Last=-1
+  P8:  First=0  Last=-1
+  P9:  First=0  Last=-1
+  P10:  First=0  Last=-1
+  P11:  First=0  Last=-1
+  P12:  First=0  Last=-1
+  P13:  First=0  Last=-1
+  P14:  First=0  Last=-1
+  P15:  First=0  Last=-1
+  P16:  First=0  Last=-1
+  P17:  First=0  Last=-1
+  P18:  First=0  Last=-1
+  P19:  First=0  Last=-1
+  P20:  First=0  Last=-1
+  P21:  First=0  Last=0
+  P22:  First=1  Last=0
+  P23:  First=1  Last=0
+  P24:  First=1  Last=0
+  P25:  First=1  Last=0
+  P26:  First=1  Last=0
+  P27:  First=1  Last=0
+  P28:  First=1  Last=0
+  P29:  First=1  Last=0
+  P30:  First=1  Last=0
+  P31:  First=1  Last=0
+  P32:  First=1  Last=0
+  P33:  First=1  Last=0
+  P34:  First=1  Last=0
+  P35:  First=1  Last=0
+  P36:  First=1  Last=0
+  P37:  First=1  Last=0
+  P38:  First=1  Last=0
+  P39:  First=1  Last=0
+  P40:  First=1  Last=0
+  P41:  First=1  Last=0
+  P42:  First=1  Last=1
+  P43:  First=2  Last=1
+  P44:  First=2  Last=1
+  P45:  First=2  Last=1
+  P6:  First=0  Last=-1
+  P46:  First=2  Last=1
+  P47:  First=2  Last=1
+  P48:  First=2  Last=1
+  P49:  First=2  Last=1
+  P50:  First=2  Last=1
+  P51:  First=2  Last=1
+  P52:  First=2  Last=1
+  P53:  First=2  Last=1
+  P54:  First=2  Last=1
+  P55:  First=2  Last=1
+  P56:  First=2  Last=1
+  P57:  First=2  Last=1
+  P58:  First=2  Last=1
+  P59:  First=2  Last=1
+  P60:  First=2  Last=1
+  P61:  First=2  Last=1
+  P62:  First=2  Last=1
+  P63:  First=2  Last=2
+  P64:  First=3  Last=2
+  P65:  First=3  Last=2
+  P66:  First=3  Last=2
+  P67:  First=3  Last=2
+  P68:  First=3  Last=2
+  P69:  First=3  Last=2
+  P70:  First=3  Last=2
+  P71:  First=3  Last=2
+  P72:  First=3  Last=2
+  P73:  First=3  Last=2
+  P74:  First=3  Last=2
+  P75:  First=3  Last=2
+  P76:  First=3  Last=2
+  P77:  First=3  Last=2
+  P78:  First=3  Last=2
+  P79:  First=3  Last=2
+  P80:  First=3  Last=2
+  P81:  First=3  Last=2
+  P82:  First=3  Last=2
+  P83:  First=3  Last=2
+  P84:  First=3  Last=2
+  P85:  First=3  Last=3
+  P86:  First=4  Last=3
+  P87:  First=4  Last=3
+  P88:  First=4  Last=3
+  P89:  First=4  Last=3
+  P5:  First=0  Last=-1
+  P90:  First=4  Last=3
+  P91:  First=4  Last=3
+  P92:  First=4  Last=3
+  P93:  First=4  Last=3
+  P94:  First=4  Last=3
+  P95:  First=4  Last=3
+  P96:  First=4  Last=3
+  P97:  First=4  Last=3
+  P98:  First=4  Last=3
+  P99:  First=4  Last=3
+  P100:  First=4  Last=3
+  P101:  First=4  Last=3
+  P102:  First=4  Last=3
+  P103:  First=4  Last=3
+  P104:  First=4  Last=3
+  P105:  First=4  Last=3
+  P106:  First=4  Last=4
+  P107:  First=5  Last=4
+  P108:  First=5  Last=4
+  P109:  First=5  Last=4
+  P110:  First=5  Last=4
+  P111:  First=5  Last=4
+  P112:  First=5  Last=4
+  P113:  First=5  Last=4
+  P114:  First=5  Last=4
+  P115:  First=5  Last=4
+  P116:  First=5  Last=4
+  P117:  First=5  Last=4
+  P118:  First=5  Last=4
+  P119:  First=5  Last=4
+  P120:  First=5  Last=4
+  P121:  First=5  Last=4
+  P122:  First=5  Last=4
+  P123:  First=5  Last=4
+  P124:  First=5  Last=4
+  P125:  First=5  Last=4
+  P126:  First=5  Last=4
+  P127:  First=5  Last=5
+  P4:  First=0  Last=-1
+  P3:  First=0  Last=-1
+  P2:  First=0  Last=-1
+  P1:  First=0  Last=-1
+  P0: Connecting node 2
+  P0: Connecting node 1
+  P0: Connecting node 5
+  P0: Connecting node 3
+  P0: Connecting node 4
+
+  P0: Exiting parallel region.
+
+  Minimum distances from node 0:
+
+   0   0
+   1  35
+   2  15
+   3  45
+   4  49
+   5  41
+
+DIJKSTRA_OPENMP
+  Normal end of execution.
+
+18 April 2022 09:43:19 PM
