@@ -1,0 +1,6 @@
+Following is Breadth First Traversal (starting from vertex A) 
+ABCED total: 0.033193 s
+
+real	0m0.054s
+user	0m0.374s
+sys	0m0.066s

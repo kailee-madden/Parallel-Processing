@@ -1,0 +1,23 @@
+#!/bin/bash
+#SBATCH --job-name="bfs-openmp"
+#SBATCH --output="sparse-8-graph.out"
+#SBATCH --partition=compute
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --export=ALL
+#SBATCH --account=csd453
+#SBATCH -t 00:10:00
+
+# AOCC environment
+module purge
+module load slurm
+module load cpu
+module load aocc
+
+#SET the number of openmp threads
+export OMP_NUM_THREADS=8
+
+#Run the openmp job 
+time ./BFS3exe
