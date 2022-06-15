@@ -1,0 +1,7 @@
+Following is Breadth First Traversal (starting from vertex A) 
+Number of threads = 16
+A1BDa3a9a5Ca7a4a2a6a1a8SIowkNfsXd1c6b6JYOpKgd6d2Zc72xPLqb7ahd3c8MybTQlib8Ed4c9c1RjUFmtb9d5c2VrdGnuzWcc3b1Hd7vc4b2d8c5b3d9b4eb5397f3j9e8e2k1f9e6e4f148f4e1e7e5e3e9f2g1i1f55f76f6f8g2h2g8k6h5k8k2j5i9j3h8i3h3g3j1h9g9j6j4h6i4h4k3g4h1j2k4k7g5i2i6h7i5g6k5i7g7k9i8j7j8 total: 0.007056 s
+
+real	0m0.040s
+user	0m0.069s
+sys	0m0.024s
